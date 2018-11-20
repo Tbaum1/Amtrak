@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:orientation="vertical">
+	<TextView
+		android:text="Calculate Amtrak Delivery Time"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:textStyle="bold"
+		android:textAlignment="center"
+		android:layout_marginTop="15dp"
+		android:textSize="20sp" />
+	<ImageView
+		android:src="@drawable/amtrak"
+		android:layout_width="wrap_content"
+		android:layout_height="177.0dp"
+		android:id="@+id/imageView1"
+		android:layout_marginTop="20dp" />
+	<TextView
+		android:text="Enter your boarding time in military time"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginTop="30dp"
+		android:textAlignment="center"
+		android:textStyle="bold"
+		android:layout_marginBottom="25dp" />
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="230.0dp"
+		android:id="@+id/gridLayout1"
+		android:columnCount="4"
+		android:layout_marginBottom="0.0dp">
+		<TextView
+			android:text="Hours:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView3"
+			android:layout_columnSpan="2"
+			android:layout_marginLeft="10dp"
+			android:textStyle="bold"
+			android:editable="false" />
+		<android.support.design.widget.TextInputEditText
+			android:id="@+id/inputHours"
+			android:layout_marginLeft="5dp"
+			android:layout_columnSpan="2"
+			android:width="25dp"
+			android:inputType="text|number" />
+		<TextView
+			android:text="Minutes:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView4"
+			android:layout_columnSpan="2"
+			android:layout_marginLeft="10dp"
+			android:textStyle="bold"
+			android:editable="false" />
+		<android.support.design.widget.TextInputEditText
+			android:id="@+id/inputMinutes"
+			android:layout_columnSpan="2"
+			android:layout_marginLeft="5dp"
+			android:width="25dp"
+			android:inputType="number|text" />
+		<TextView
+			android:text="Length of trip in minutes"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView5"
+			android:textAlignment="center"
+			android:layout_columnSpan="4"
+			android:layout_gravity="center_horizontal|left"
+			android:layout_marginTop="5dp"
+			android:textStyle="bold"
+			android:layout_marginLeft="10dp"
+			android:editable="false" />
+		<android.support.design.widget.TextInputEditText
+			android:id="@+id/inputLength"
+			android:layout_marginLeft="10dp"
+			android:width="50dp"
+			android:layout_columnSpan="4"
+			android:inputType="number|text" />
+		<Button
+			android:text="Submit"
+			android:id="@+id/btnSubmit"
+			android:layout_columnSpan="4"
+			android:layout_gravity="center_horizontal" />
+	</GridLayout>
+</LinearLayout>
